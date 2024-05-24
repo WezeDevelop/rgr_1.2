@@ -1,0 +1,28 @@
+.header
+    display: flex
+    justify-content: space-between
+    padding-top: 2rem
+    padding-bottom: 1.5rem
+    &__box
+        display: flex
+        flex-direction: row
+        align-items: center
+        list-style-type: none
+        &__item
+            transition: all .4s ease
+            &:not(:last-child)
+                margin-right: 6rem
+            &:hover
+                transform: translateY(-.3rem)
+                border-bottom: .1rem solid $color-black
+
+                &:last-child
+                    border-bottom: 0rem
+        &__item__link
+            color: $color-black
+            text-decoration: none
+            font-weight: 400
+            font-size: 1.6rem
+            transition: all .4s ease
+            &:hover
+                font-weight: 700
